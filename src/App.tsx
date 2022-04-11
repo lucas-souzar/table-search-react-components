@@ -3,6 +3,7 @@ import Products from "./mock/data";
 import { TableHeader } from "./components/Table/types";
 
 import "./App.css";
+import InputSearch from "./components/InputSearch";
 
 const headers: TableHeader[] = [
   { key: "id", value: "ID" },
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="search">
+        <InputSearch />
+      </div>
       <div className="data">
         <TablePapyrus
           data={Products}
